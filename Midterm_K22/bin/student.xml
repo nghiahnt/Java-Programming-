@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students>
+    <Student>
+        <Id>001</Id>
+        <Name>John Doe</Name>
+        <Address>123 Main Street, City</Address>
+        <DateOfBirth>2000-01-15</DateOfBirth>
+    </Student>
+    <Student>
+        <Id>002</Id>
+        <Name>Jane Smith</Name>
+        <Address>456 Elm Street, Town</Address>
+        <DateOfBirth>1999-07-25</DateOfBirth>
+    </Student>
+    <Student>
+        <Id>003</Id>
+        <Name>David Johnson</Name>
+        <Address>789 Oak Street, Village</Address>
+        <DateOfBirth>2001-03-05</DateOfBirth>
+    </Student>
+</Students>

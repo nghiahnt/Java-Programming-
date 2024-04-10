@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sinh_vien>
+	<ten>Nguyen Trong Nghia</ten>
+	<tuoi>21</tuoi>
+	<que_quan>Quang Nam</que_quan>
+	<lop>20GIT</lop>
+	<mon_hoc>
+		<mon>Toan cao cap</mon>
+		<mon>Lap trinh Java nang cao</mon>
+		<mon>Cau truc du lieu va giai thuat</mon>
+	</mon_hoc>
+</sinh_vien>
