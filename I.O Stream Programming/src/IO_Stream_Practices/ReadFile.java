@@ -7,21 +7,20 @@ import java.io.IOException;
 public class ReadFile {
 	public static void readFile(String path) {
 		FileInputStream fis = null;
-		
+
 		try {
 			fis = new FileInputStream(path);
 			int data;
 			data = fis.read(); // read byte data
-			
+
 			while (data != -1) {
-				System.out.print((char)data);
+				System.out.print((char) data);
 				data = fis.read();
 			}
 		} catch (IOException e) {
 			// TODO: handle exception
 			System.out.println("IO Exception Error");
-		} 
-		finally {
+		} finally {
 			try {
 				fis.close();
 			} catch (IOException e2) {

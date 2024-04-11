@@ -1,4 +1,4 @@
-package I.O_Stream_Examples;
+package IO_Stream_Examples;
 
 import java.io.*;
 

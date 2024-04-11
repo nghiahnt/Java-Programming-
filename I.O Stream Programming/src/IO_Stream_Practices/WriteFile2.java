@@ -8,7 +8,7 @@ public class WriteFile2 {
 		// TODO Auto-generated method stub
 		String mgs = "Programming with I.O Stream in Java - version 2";
 		FileWriter f = new FileWriter("./src/IO_Stream_Practices/Data.txt");
-		
+
 		f.write(mgs);
 		f.flush();
 		f.close();

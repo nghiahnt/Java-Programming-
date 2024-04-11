@@ -13,14 +13,18 @@ import javax.swing.JFrame;
 import javax.swing.JTextArea;
 
 public class OpenFile extends JFrame implements ActionListener {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JTextArea textArea = new JTextArea();
 	JButton openBtn = new JButton("Open");
-	
+
 	FileReader fr;
 	BufferedReader br;
-	
+
 	JFileChooser chooser;
-	
+
 	public OpenFile() {
 		Container cont = this.getContentPane();
 		openBtn.addActionListener(this);
@@ -51,13 +55,13 @@ public class OpenFile extends JFrame implements ActionListener {
 			readFile(fileName);
 		}
 	}
-	
+
 	public void readFile(String path) {
 		try {
 			textArea.setText("");
 			fr = new FileReader(path);
 			br = new BufferedReader(fr);
-			
+
 			String s;
 			while ((s = br.readLine()) != null) {
 				textArea.append(s + "\n");
