@@ -5,3 +5,7 @@ nghia&4&7.0
 xuan&5&8.0
 khuya&6&9.77
 trogn&7&10.0
+khokho&10&9.99
+huhu&9&8.0
+tét&11&8.8
+tét2&12&8.9
