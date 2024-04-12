@@ -1,0 +1,7 @@
+nghiaxuan&2&11.0
+ho&1&5.0
+nguyen&2&4.0
+nghia&4&7.0
+xuan&5&8.0
+khuya&6&9.77
+trogn&7&10.0
