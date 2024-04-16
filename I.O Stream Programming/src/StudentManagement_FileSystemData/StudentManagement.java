@@ -31,7 +31,9 @@ public class StudentManagement {
 			String studentInfo;
 
 			while ((studentInfo = br.readLine()) != null) {
+				
 				Vector<Object> data = new Vector<Object>();
+				
 				String[] s = studentInfo.split("&");
 				data.add(s[0]);
 				data.add(s[1]);
@@ -86,6 +88,12 @@ public class StudentManagement {
 	}
 
 	// BUG
+	/**
+	 * The resolve way is, transform student data vector to an array
+	 * Sort the array, create the method Compare in Student object
+	 * @return
+	 * @throws IOException
+	 */
 	@SuppressWarnings("unchecked")
 	public Vector<Object> sortData() throws IOException {
 	    getAllStudent();
