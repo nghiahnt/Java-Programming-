@@ -18,8 +18,8 @@ public class App {
 
 			Song song1 = new Song();
 
-			song1.setId(1);
-			song1.setSongName("Lalala");
+			song1.setId(2);
+			song1.setSongName("Baby shark");
 			song1.setArtist("Don't_remember");
 			
 			session.persist(song1);
