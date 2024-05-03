@@ -1,0 +1,5 @@
+Requirements
+- Build a app to management students - ok
+(Add more some features such as: search, sort, navbar information, signup, login, logout, set permistion rules to management)
+- Use data get into database store at .xml file
+- Read xml file and show content to the form, form can be update data (add, delete, update) which affect to xml file and database

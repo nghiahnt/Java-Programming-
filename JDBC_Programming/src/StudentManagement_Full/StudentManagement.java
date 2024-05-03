@@ -7,12 +7,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Vector;
 import java.util.concurrent.CompletableFuture;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+
+import org.xml.sax.SAXException;
 
 public class StudentManagement extends JFrame implements ActionListener, MouseListener {
 
@@ -34,7 +37,7 @@ public class StudentManagement extends JFrame implements ActionListener, MouseLi
 	public static DefaultTableModel model;
 
 	// Buttons
-	JButton editBtn, deleteBtn, insertBtn, cancleBtn;
+	JButton editBtn, deleteBtn, insertBtn, cancleBtn, saveToXML, showToXML;
 
 	int selectedRow = 0;
 
@@ -57,12 +60,17 @@ public class StudentManagement extends JFrame implements ActionListener, MouseLi
 		deleteBtn = new JButton("Delete");
 		insertBtn = new JButton("Insert");
 		cancleBtn = new JButton("Cancle");
+		// XML Buttons
+		saveToXML = new JButton("Save XML File");
+		showToXML = new JButton("Show XML File");
 
 		JPanel btnPanel = new JPanel();
 		btnPanel.add(editBtn);
 		btnPanel.add(deleteBtn);
 		btnPanel.add(insertBtn);
 		btnPanel.add(cancleBtn);
+		btnPanel.add(saveToXML);
+		btnPanel.add(showToXML);
 
 		// Table
 		model = new DefaultTableModel(vData, vTitle);
@@ -75,15 +83,18 @@ public class StudentManagement extends JFrame implements ActionListener, MouseLi
 		deleteBtn.addActionListener(this);
 		insertBtn.addActionListener(this);
 		cancleBtn.addActionListener(this);
+		saveToXML.addActionListener(this);
+		showToXML.addActionListener(this);
 
 		conn.add(btnPanel, "South");
 		conn.add(tableResult, "North");
-		this.setSize(400, 300);
+		this.setSize(700, 350);
 		this.setLocation(200, 100);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Edit")) {
@@ -112,6 +123,20 @@ public class StudentManagement extends JFrame implements ActionListener, MouseLi
 			
 			StudentManagement.vData.removeElementAt(selectedRow);
 			StudentManagement.model.fireTableDataChanged();
+		}
+		if (e.getActionCommand().equals("Save XML File")) {
+			ModifyXML_StudentManagement.createXMLFile(vData, vTitle);
+		}
+		if (e.getActionCommand().equals("Show XML File")) {
+			try {
+				ModifyXML_StudentManagement obj = new ModifyXML_StudentManagement("XML Content");
+			} catch (SAXException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		}
 	}
 

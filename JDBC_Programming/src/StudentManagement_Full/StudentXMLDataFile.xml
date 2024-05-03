@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+    <student>
+        <ID>1</ID>
+        <Name>Nghia</Name>
+        <Math>10.0</Math>
+        <Phys>10.0</Phys>
+        <Chem>1.0</Chem>
+        <Aver>7.0</Aver>
+    </student>
+    <student>
+        <ID>2</ID>
+        <Name>Xuan</Name>
+        <Math>7.0</Math>
+        <Phys>8.0</Phys>
+        <Chem>9.0</Chem>
+        <Aver>8.0</Aver>
+    </student>
+    <student>
+        <ID>3</ID>
+        <Name>XXuan</Name>
+        <Math>9.0</Math>
+        <Phys>4.0</Phys>
+        <Chem>9.0</Chem>
+        <Aver>7.33333</Aver>
+    </student>
+</students>
