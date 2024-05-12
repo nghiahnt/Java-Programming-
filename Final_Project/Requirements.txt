@@ -1,0 +1,26 @@
+Tên đề tài: Xây dựng ứng dụng chat messenger
+
+Các chức năng chính
+- Đăng kí
+- Đăng nhập
+- Hiển thị danh sách bạn bè
+- Chat qua danh sách bạn bè
+- Gửi file, sticker
+- Xem trạng thái hoạt động
+- Cài đặt tài khoản (tên, avatar)
+- Gọi thoại
+- Gọi video
+- Tìm kiếm tin nhắn
+- Thay đổi chủ đề, biểu tượng cảm xúc
+- Đặt biệt danh
+- Tạo nhóm trò chuyện
+- Block tin nhắn
+
+Công nghệ, tính năng khác
+- Giao diện dễ nhìn
+- Sử dụng Hibernate
+- Mã hóa dữ liệu
+
+Cơ sở dữ liệu
+- Apache - MySQL
+- 
