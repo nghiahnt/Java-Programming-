@@ -1,4 +1,4 @@
-package TCP_UDP_URLMulticast.Standalone_App;
+package TCP_UDP_URLMuticast.Standalone_App;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
