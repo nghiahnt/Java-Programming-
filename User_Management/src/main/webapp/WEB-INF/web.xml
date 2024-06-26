@@ -34,6 +34,18 @@
   	<description></description>
   	<servlet-class>com.servlet.UpdateUser</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<display-name>AdminServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.AdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ExportExcel</servlet-name>
+  	<display-name>ExportExcel</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.ExportExcel</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>RegistrationServlet</servlet-name>
   	<url-pattern>/register</url-pattern>
@@ -53,6 +65,14 @@
   <servlet-mapping>
   	<servlet-name>UpdateUser</servlet-name>
   	<url-pattern>/updateUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<url-pattern>/adminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ExportExcel</servlet-name>
+  	<url-pattern>/exportExcel</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

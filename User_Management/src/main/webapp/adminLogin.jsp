@@ -38,15 +38,12 @@
 						<figure>
 							<img src="images/signin-image.jpg" alt="sing up image">
 						</figure>
-						<a href="registration.jsp" class="signup-image-link">Create an
-							account</a> <a href="adminLogin.jsp" class="management">Sign in user
-							management</a>
 
 					</div>
 
 					<div class="signin-form">
-						<h2 class="form-title">Sign in</h2>
-						<form method="post" action="login" class="register-form"
+						<h2 class="form-title">Sign in to Admin</h2>
+						<form method="post" action="adminServlet" class="register-form"
 							id="login-form">
 							<div class="form-group">
 								<label for="username"><i
